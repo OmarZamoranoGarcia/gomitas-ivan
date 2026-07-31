@@ -5,7 +5,7 @@ export default function Ubication() {
   return (
     <section
       id="ubicacion"
-      className="flex flex-col items-center justify-center relative min-h-[100dvh] px-4 sm:px-6 overflow-x-hidden bg-gradient-to-r from-[var(--color-gradient)] to-[var(--color-gradient2)]"
+      className="flex flex-col items-center justify-center relative px-4 sm:px-6 py-16 overflow-x-hidden bg-gradient-to-r from-[var(--color-gradient)] to-[var(--color-gradient2)]"
     >
       {/* Encabezado */}
       <h1 className="text-secondary text-4xl font-bold text-center mb-8 md:mb-12">
