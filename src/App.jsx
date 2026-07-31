@@ -48,16 +48,46 @@ export default function App() {
   ];
 
   return (
-  <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+  // <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+  //   <main>
+  //     <section className="min-h-screen snap-start">
+  //       <Nav />
+  //       <Hero />
+  //     </section>
+
+  //     <section
+  //       id="catalogo"
+  //       className="min-h-screen snap-start relative pt-24 sm:pt-28 px-4 sm:px-6 bg-gradient-to-r from-[var(--color-gradient)] to-[var(--color-gradient2)]"
+  //     >
+  //       <h2 className="text-secondary text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
+  //         Sabores
+  //       </h2>
+  //       <div className="flex flex-wrap items-center justify-center pb-12 gap-6 sm:gap-10 max-w-[100rem] mx-auto">
+  //         {FLAVORS.map((flavor) => (
+  //           <FlavorCard key={flavor.id} flavor={flavor} />
+  //         ))}
+  //       </div>
+  //     </section>
+
+  //     <section className="min-h-screen snap-start">
+  //       <Ubication />
+  //     </section>
+  //   </main>
+
+  //   <footer className="snap-end">
+  //     <Footer />
+  //   </footer>
+  // </div>
+  <div className="h-screen overflow-y-scroll">
     <main>
-      <section className="min-h-screen snap-start">
+      <section className="min-h-screen">
         <Nav />
         <Hero />
       </section>
 
       <section
         id="catalogo"
-        className="min-h-screen snap-start relative pt-24 sm:pt-28 px-4 sm:px-6 bg-gradient-to-r from-[var(--color-gradient)] to-[var(--color-gradient2)]"
+        className="relative pt-16 px-4 bg-gradient-to-r from-[var(--color-gradient)] to-[var(--color-gradient2)]"
       >
         <h2 className="text-secondary text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
           Sabores
@@ -69,14 +99,11 @@ export default function App() {
         </div>
       </section>
 
-      <section className="min-h-screen snap-start">
+      <section className="min-h-screen">
         <Ubication />
       </section>
     </main>
-
-    <footer className="snap-end">
       <Footer />
-    </footer>
   </div>
 );
 }
