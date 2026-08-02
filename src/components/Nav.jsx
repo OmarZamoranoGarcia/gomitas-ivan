@@ -9,7 +9,6 @@ export default function Nav() {
     <>
       <li><a href="#catalogo" onClick={() => setOpen(false)}>Catálogo</a></li>
       <li><a href="#ubicacion" onClick={() => setOpen(false)}>Ubicación</a></li>
-      <li><a onClick={() => setOpen(false)}>Contacto</a></li>
     </>
   );
 
@@ -17,7 +16,7 @@ export default function Nav() {
     <nav className="bg-[var(--color-background)] fixed top-0 z-50 w-full">
       <div className="flex items-center justify-between p-4">
         <div className="font-bold text-2xl sm:text-3xl md:text-4xl text-[var(--color-text-primary)]">
-          Gomitas<span className="text-[var(--color-red)]"> Ivan</span>
+          TJ<span className="text-[var(--color-red)]"> Gomiland</span>
         </div>
 
         {/* Links desktop */}

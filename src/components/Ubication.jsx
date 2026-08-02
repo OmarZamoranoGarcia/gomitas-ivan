@@ -32,7 +32,7 @@ export default function Ubication() {
                   rel="noopener noreferrer"
                   className="transform hover:scale-110 transition-transform duration-300"
                 >
-                  <InstargramButton />
+                  <InstargramButton rounded="lg" px="4" py="2" />
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=100046370574479#"
@@ -40,7 +40,7 @@ export default function Ubication() {
                   rel="noopener noreferrer"
                   className="transform hover:scale-110 transition-transform duration-300"
                 >
-                  <FacebookButton />
+                  <FacebookButton px="4" py="2" />
                 </a>
               </div>
             </div>

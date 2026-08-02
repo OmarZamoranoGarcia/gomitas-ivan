@@ -1,38 +1,38 @@
 import 'iconify-icon';
-import { WhatsAppButton } from "./Buttons";
+import { WhatsAppButton, InstargramButton } from "./Buttons";
 
 export default function Hero() {
+  const cellNumber = import.meta.env.VITE_CELL_NUMBER;
+  const message = import.meta.env.VITE_MESSAGE;
   return (
     <section className="relative min-h-screen pt-32 sm:pt-38 pb-16 sm:pb-20 px-4 sm:px-6 overflow-x-hidden bg-gradient-to-r from-[var(--color-gradient)] to-[var(--color-gradient2)]">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-center justify-center">
+      <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-16 place-items-center">
 
         {/* Columna Izquierda */}
-        <div className="z-10 px-4 sm:px-4">
-          <h1 className="text-primary text-center font-bold text-4xl sm:text-6xl sm:text-start lg:text-7xl xl:text-8xl leading-[0.9] mb-6 sm:mb-8">
-            Algun
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFCC00] via-[#FF3B30] to-[#AF52DE]"> slogan
+        <div className="w-full z-10 px-4 xl:pl-50">
+          <h1 className="text-primary text-center font-bold leading-tight text-4xl sm:text-6xl xl:text-start lg:text-7xl xl:text-8xl leading-[0.9] mb-6 sm:mb-8">
+            El reino de gomitas más delicioso de
+            <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFCC00] via-[#FF3B30] to-[#AF52DE]"> todo Tijuana
             </span>
-          </h1>
+          </h1>     
 
-          <p className="w-full text-gray-400 text-base text-center lg:text-start sm:text-lg md:text-xl max-w-lg mb-8 sm:mb-10 leading-relaxed">
-            Alguna descripción.
-          </p>
-
-          <div className="w-full flex items-center justify-center lg:justify-start gap-4 sm:gap-8">
+          <div className="w-full flex items-center justify-center xl:justify-start gap-4 sm:gap-8">
             <a
-              href=""
-              className="whitespace-nowrap px-6 py-3 bg-[#FF3B30] hover:bg-[#e0342a] text-[var(--color-text-primary)] rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-110 hover:translate-x-2 flex items-center gap-2"
+              href="https://www.instagram.com/gomiland_tj/"  
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold duration-200 shadow-md hover:shadow-lg transition-all transform hover:scale-110 hover:translate-x-2"
             >
-              Red social
+              <InstargramButton rounded="full" px="6" py="4" />
             </a>
 
             <a
-              href=""
+              href={`https://wa.me/${cellNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 bg-green-500 text-white rounded-full font-bold hover:bg-green-600 duration-200 shadow-md hover:shadow-lg transition-all transform hover:scale-110 hover:translate-x-2"
+              className="flex items-center gap-2 transition-all transform hover:scale-110 hover:translate-x-2"
             >
-              <WhatsAppButton />
+              <WhatsAppButton rounded="full" px='6' py="4"/>
             </a>
           </div>
         </div>
@@ -62,10 +62,10 @@ export default function Hero() {
 
                 <div className="mt-auto w-full">
                   <div className="flex justify-between items-end mb-2 sm:mb-3">
-                    <span className="text-secondary text-[10px] sm:text-xs font-bold uppercase tracking-widest">
-                      Heat Level
+                    <span className="text-secondary text-[10px] sm:text-xs font-bold uppercase tracking-wide">
+                      Nivel de picante
                     </span>
-                    <span className="text-[#FF3B30] text-xs sm:text-sm font-bold">EXTREME</span>
+                    <span className="text-[#FF3B30] text-xs sm:text-sm font-bold">EXTREMO</span>
                   </div>
                   <div className="h-1.5 sm:h-2 w-full bg-white/10 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 w-[85%]" />
