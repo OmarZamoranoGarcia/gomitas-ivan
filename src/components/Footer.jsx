@@ -16,7 +16,7 @@ export default function Footer() {
                     </a>
                 </li>
                 <li><a
-                        href="https://www.instagram.com/gomiland_tj/"  
+                        href="https://www.instagram.com/tj_gomiland/?utm_source=ig_web_button_share_sheet"  
                         target="_blank"
                         rel="noopener noreferrer">
                         <InstargramButton rounded="lg" px="4" py="2"/>

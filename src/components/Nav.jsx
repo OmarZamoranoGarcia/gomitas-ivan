@@ -15,8 +15,17 @@ export default function Nav() {
   return (
     <nav className="bg-[var(--color-background)] fixed top-0 z-50 w-full">
       <div className="flex items-center justify-between p-4">
-        <div className="font-bold text-2xl sm:text-3xl md:text-4xl text-[var(--color-text-primary)]">
-          TJ<span className="text-[var(--color-red)]"> Gomiland</span>
+        <div className="flex items-center gap-3">
+          {/* Logo */}
+          <img
+            src="/Logo.jpeg"
+            alt="TJ Gomiland"
+            className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 object-contain rounded-lg"
+          />
+
+          <div className="font-bold text-2xl sm:text-3xl md:text-4xl text-[var(--color-text-primary)]">
+            TJ<span className="text-[var(--color-red)]"> Gomiland</span>
+          </div>
         </div>
 
         {/* Links desktop */}

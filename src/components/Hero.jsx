@@ -18,7 +18,7 @@ export default function Hero() {
 
           <div className="w-full flex items-center justify-center xl:justify-start gap-4 sm:gap-8">
             <a
-              href="https://www.instagram.com/gomiland_tj/"  
+              href="https://www.instagram.com/tj_gomiland/?utm_source=ig_web_button_share_sheet"  
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold duration-200 shadow-md hover:shadow-lg transition-all transform hover:scale-110 hover:translate-x-2"
@@ -51,11 +51,11 @@ export default function Hero() {
                 </div>
 
                 <h3 className="text-secondary text-[clamp(1.1rem,2vw,1.75rem)] text-center mb-1 sm:mb-2 leading-tight">
-                  Tipo de gomita
+                  Gomitas de durazno
                 </h3>
 
                 <img
-                  src="/gomita.jpg"
+                  src="/PeachGummy.jpeg"
                   alt="Gomita"
                   className="w-4/5 h-[45%] object-cover rounded-lg mb-4 sm:mb-5"
                 />
@@ -76,7 +76,7 @@ export default function Hero() {
             </div>
 
             <div className="absolute -top-6 -left-6 sm:-top-10 sm:-left-10 w-14 h-14 sm:w-20 sm:h-20 animate-bounce">
-              <iconify-icon icon="fluent-emoji:mango" className="text-4xl sm:text-6xl drop-shadow-2xl" />
+              <iconify-icon icon="fluent-emoji-flat:peach" className="text-4xl sm:text-6xl drop-shadow-2xl" />
             </div>
             <div className="absolute bottom-14 -right-4 sm:bottom-20 sm:-right-12 w-16 h-16 sm:w-24 sm:h-24 rotate-12">
               <iconify-icon icon="fluent-emoji-flat:peach" className="text-5xl sm:text-7xl drop-shadow-2xl" />
