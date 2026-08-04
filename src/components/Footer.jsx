@@ -24,7 +24,7 @@ export default function Footer() {
                 </li>          
             </ul>
             <div className="text-center">
-                &copy; 2026 Gomitas Ivan. Todos los derechos reservados.
+                &copy; 2026 TJ Gomiland. Todos los derechos reservados.
             </div>
         </footer>
     );
